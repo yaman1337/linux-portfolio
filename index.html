@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>terminal@yaman</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="terminal open" id="terminal">
+        <!-- header -->
+        <div class="terminal-header">
+          yaman1337@web:/
+
+          <div class="nav-buttons">
+            <div onclick="window.location.assign('/')"></div>
+            <div id="width-changer"></div>
+            <div id="terminal-minimizer"></div>
+          </div>
+        </div>
+
+        <!-- shell input area -->
+        <div class="shell" id="shell">
+          <div class="command">
+            <div class="username">yaman1337:</div>
+            <input
+              type="text"
+              class="command-input"
+              autofocus="true"
+              spellcheck="false"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- status bar -->
+      <div class="status-bar">
+        <div class="terminal-icon" id="terminal-icon">
+          >
+          <div class="dot open"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/main.js" type="module"></script>
+</html>
