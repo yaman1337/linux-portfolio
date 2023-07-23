@@ -21,6 +21,9 @@ class Terminal {
     this.terminalMinizer.addEventListener("click", (e) => {
       this.minimizeTerminal();
     });
+    this.terminal.addEventListener("click", (e) => {
+      this.currentInput.focus()
+    })
   }
 
   init() {
@@ -52,6 +55,7 @@ class Terminal {
   }
 
   async processInput(input) {
+    input = input.trim()
     switch (input) {
       case "clear":
         this.clearTerminal();
